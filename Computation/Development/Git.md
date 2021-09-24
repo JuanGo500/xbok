@@ -1,7 +1,6 @@
 # Git
 
-## Comandos
-
+## Repositorio local
 Crear repositorio local `git init`
 
 ## Repositorio remoto
@@ -11,7 +10,8 @@ Crear repositorio local `git init`
 - Quitar repositorio remoto `git remote rm origin`
 - Cambiar la url (se debe añadir primero algún repositorio) `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
 - Establecer la rama upstream `git push --set-upstream origin master`
-
+- forzar push: `git push -f origin branchname`
+  
 ### Ramas
 - Crear una rama `git branch nombrerama`
 - Comprobar ramas `git branch`
@@ -30,7 +30,15 @@ Crear repositorio local `git init`
   - git add .
 - Hacer commit
   - git commit -m 'mensaje para este commit'
+
+### Rectificar
+- Si se ha subido a remoto: git revert HEAD
+- Dar un paso atrás y dejar ficheros en stages: git reset --soft HEAD^
+
+
+
 ### Etiguetar
 - Etiquetar: git tag v0.0.2 -m "Segunda versión, cambios menores"
 - Ver etiquetas: git tag
+- Etiquetar a posteriori git tag -a v1.2 9fceb02
 

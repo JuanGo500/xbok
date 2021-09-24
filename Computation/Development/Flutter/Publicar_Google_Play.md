@@ -32,7 +32,7 @@ storeFile=location of the key store file, such as Users/<user name>/key.jks
 - se pone sin comillas
 - en Mac funciona con / inicial p.ej. Users/Juan/key.jks
 
-Por ejemplo, para el keystore actual en Macserá:
+Por ejemplo, para el keystore actual en Mac será:
 
 storePassword=xandair
 keyPassword=xandair
