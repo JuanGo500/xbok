@@ -1,5 +1,6 @@
 # Simulación de Montecarlo
 
+Una simulación en R
 ```R
 # Creamos la urna
 bolas=rep(c("rojo","azul","blanco"),c(7,2,1))
