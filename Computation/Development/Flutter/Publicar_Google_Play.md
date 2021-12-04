@@ -1,5 +1,8 @@
 # Publicar Google Play
 
+
+
+
 ## Pasos publicación
 
 ### 1.Crear una Keystore
@@ -146,3 +149,8 @@ https://flutter.dev/docs/deployment/android#adding-a-launcher-icon
 
 ### Generación de clave
 https://developer.android.com/studio/publish/app-signing#generate-key
+
+
+### Cuenta de google de desarrollador
+
+https://play.google.com/console/u/0/signup

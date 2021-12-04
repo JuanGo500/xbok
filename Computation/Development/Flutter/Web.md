@@ -1,6 +1,23 @@
 flutter run -d chrome --release
 
-
+d
 Failed to establish connection with the application instance in Chrome.
 This can happen if the websocket connection used by the web tooling is unable to correctly establish a connection,
 for example due to a firewall.
+
+To run the project 
+
+> flutter run -d chrome --release
+
+If you run without release, there is a problem:
+
+> Failed to establish connection with the application instance in Chrome.
+> This can happen if the websocket connection used by the web tooling is unable to correctly establish a connection,
+> for example due to a firewall.
+
+
+
+# References
+
+Build a Navigation Bar
+https://blog.usejournal.com/interactive-navigation-items-in-flutter-web-7fccc5975779

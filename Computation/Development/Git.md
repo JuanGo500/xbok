@@ -1,9 +1,7 @@
 # Git
 
-## Repositorio local
-Crear repositorio local `git init`
-
-## Repositorio remoto
+## Repositorios
+- Crear repositorio local `git init`
 - Comprobar si hay algún remoto `git remote -v`
 - Clonar `git clone https://github.com/JuanGo500/nombrerepository.git`
 - Añadir un repositorio remoto `git remote add origin https://github.com/USERNAME/REPOSITORY.git`
@@ -12,7 +10,7 @@ Crear repositorio local `git init`
 - Establecer la rama upstream `git push --set-upstream origin master`
 - forzar push: `git push -f origin branchname`
   
-### Ramas
+## Ramas
 - Crear una rama `git branch nombrerama`
 - Comprobar ramas `git branch`
 - Borrar rama `git branch -d nombrerama`
@@ -21,9 +19,9 @@ Crear repositorio local `git init`
 - Borrar rama en remoto `git push origin --delete master`
 - Cargar rama en working directory `git checkout nombrerama`
 - Volver a un commit anterior
-`git checkout hashcommit`
+`git checkout <hashcommit>`
 
-### Aprobación
+## Aprobación
 - Añadir ficheros a stash: 
   - git add -A
   - git add --all
@@ -31,14 +29,11 @@ Crear repositorio local `git init`
 - Hacer commit
   - git commit -m 'mensaje para este commit'
 
-### Rectificar
+## Rectificar
 - Si se ha subido a remoto: git revert HEAD
-- Dar un paso atrás y dejar ficheros en stages: git reset --soft HEAD^
-
-
+- Dar un paso atrás y dejar ficheros en staged: git reset --soft HEAD^
 
 ### Etiguetar
 - Etiquetar: git tag v0.0.2 -m "Segunda versión, cambios menores"
 - Ver etiquetas: git tag
 - Etiquetar a posteriori git tag -a v1.2 9fceb02
-
