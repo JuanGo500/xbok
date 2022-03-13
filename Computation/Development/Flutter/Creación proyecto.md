@@ -1,3 +1,4 @@
+1. Flutter crear proyecto
 En VS Code Palette
-Flutter crear proyecto
 minúsculas
+2. Publish in Github

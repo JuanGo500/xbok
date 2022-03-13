@@ -3,7 +3,12 @@
 ## Basics
 - All that goes into a variable is an object
 - Every object is an instance of a class
+- Except the class Object, every class only has one superclass
 - Functions are objects
+- 'implements' uses classes as interfaces of other classes. Dart doesn't have explicit interfaces. Abstract class can be use as interface
+- 'extends' is used for inheritance
+- 'with' is used for mixins. A mixin is like an interface but with optional implementation. A class can be used as a mixin if it has no constructor.
+- 'on' restricts the usage of a mixin for certain classes.
 
 ## Types
 Seven primitive types
