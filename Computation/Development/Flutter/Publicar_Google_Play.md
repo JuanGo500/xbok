@@ -1,8 +1,5 @@
 # Publicar Google Play
 
-
-
-
 ## Pasos publicación
 
 ### 1.Crear una Keystore
@@ -73,7 +70,10 @@ Añadir antes de buildTypes. No hay que cambiar los valores.
    }
 ``` 
 
-### 4.Hacer build
+### 4.Sustituir el ID de applicación en todos los ficheros de la aplicación.
+Se busca com.example.nombreAplicación y se sustituye example por intelligentconta
+
+### 5.Hacer build
 Se modifica el fichero build.gradle en 
 > app>build.gradle
 

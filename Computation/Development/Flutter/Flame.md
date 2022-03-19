@@ -89,3 +89,9 @@ https://blog.geekyants.com/building-a-2d-game-in-flutter-a-comprehensive-guide-9
 
 Construir un juego con los creadores de Flame
 https://www.youtube.com/watch?v=J3ZZyzKS-rg
+
+Desarrollo de un juego básico con colisión (Marines)
+https://www.youtube.com/watch?v=SNQVYyBLIO4
+
+Repo con ejemplo Crates, incluye renderizado de texto
+https://github.com/flame-engine/flame-crates-example/blob/master/tutorial/article.md
