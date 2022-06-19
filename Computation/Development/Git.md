@@ -28,6 +28,8 @@
   - git add .
 - Hacer commit
   - git commit -m 'mensaje para este commit'
+- Hacer merge
+  - git merge <ramaOrigen> previamente se hace git checkout <ramaDestino>
 
 ## Rectificar
 - Si se ha subido a remoto: git revert HEAD
