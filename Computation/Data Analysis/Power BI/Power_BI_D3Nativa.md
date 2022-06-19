@@ -36,4 +36,9 @@ y volver a refrescar el visual. Se autoriza en el navegador la dirección.
 Tutorial
 https://docs.microsoft.com/en-us/power-bi/developer/visuals/develop-circle-card#:~:text=Sign%20in%20to%20PowerBI.com,pane%2C%20select%20the%20Developer%20Visual.
 
+https://docs.microsoft.com/en-us/power-bi/developer/visuals/visual-project-structure
+
+https://docs.microsoft.com/en-us/power-bi/developer/visuals/dataview-mappings
+
+
 
