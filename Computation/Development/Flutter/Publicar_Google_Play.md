@@ -58,7 +58,7 @@ storeFile=/Users/Juan/key.jks
    }
 ```
 
-Añadir antes de buildTypes. No hay que cambiar los valores.
+- Añadir antes de buildTypes. No hay que cambiar los valores.
  ```  
    signingConfigs {
        release {
