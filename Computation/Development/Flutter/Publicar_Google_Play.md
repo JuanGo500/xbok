@@ -70,6 +70,7 @@ Añadir antes de buildTypes. No hay que cambiar los valores.
    }
 ``` 
 
+
 ### 4.Sustituir el ID de applicación en todos los ficheros de la aplicación.
 Se busca com.example.nombreAplicación y se sustituye example por intelligentconta
 
@@ -152,5 +153,4 @@ https://developer.android.com/studio/publish/app-signing#generate-key
 
 
 ### Cuenta de google de desarrollador
-
 https://play.google.com/console/u/0/signup
