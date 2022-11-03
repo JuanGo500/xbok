@@ -2,7 +2,7 @@
 
 ## Pasos publicación
 
-### 1.Crear una Keystore
+### 1. Crear una Keystore
 
 ```
 keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
@@ -16,7 +16,7 @@ Contraseña keystore: xandair
 > Recuperar el contenido
 > keytool -v -list -keystore key.jks
 
-### 2.Crear key.properties
+### 2. Crear key.properties
 Para cada aplicación se debe crear un archivo llamado key.properties donde se guardan las claves para firmar la aplicación.
 
 Se crea en <app dir>/android/key.properties
@@ -40,7 +40,7 @@ keyAlias=key
 storeFile=/Users/Juan/key.jks
 
 
-### 3.Actualizar build.gradle
+### 3. Actualizar build.gradle
 
 <app dir>/android/app/build.gradle
 
@@ -71,10 +71,10 @@ storeFile=/Users/Juan/key.jks
 ``` 
 
 
-### 4.Sustituir el ID de applicación en todos los ficheros de la aplicación.
+### 4. Sustituir el ID de applicación en todos los ficheros de la aplicación.
 Se busca com.example.nombreAplicación y se sustituye example por intelligentconta
 
-### 5.Hacer build
+### 5. Hacer build
 Se modifica el fichero build.gradle en 
 > app>build.gradle
 
