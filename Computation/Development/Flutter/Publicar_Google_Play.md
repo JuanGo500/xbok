@@ -44,9 +44,9 @@ storeFile=/Users/Juan/key.jks
 
 <app dir>/android/app/build.gradle
 
-- Añadir antes de el bloque android
+- Añadir antes del bloque android
 
-  ```
+  
    def keystoreProperties = new Properties()
    def keystorePropertiesFile = rootProject.file('key.properties')
    if (keystorePropertiesFile.exists()) {
@@ -56,7 +56,7 @@ storeFile=/Users/Juan/key.jks
    android {
          ...
    }
-```
+
 
 - Añadir antes de buildTypes. No hay que cambiar los valores.
  ```  
