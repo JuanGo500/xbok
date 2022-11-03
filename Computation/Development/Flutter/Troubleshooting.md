@@ -6,3 +6,7 @@ El error es: "No se puede instalar esta aplicación porque otro usuario ya ha in
 
 Teléfono: Redmi 8
 Versión Android: 10 QKQ1.191014.001
+
+Posible solución: con el teléfono conectado
+``` adb shell pm uninstall com.packagename```
+
