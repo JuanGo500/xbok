@@ -23,19 +23,17 @@
 
 ## Aprobación
 - Añadir ficheros a stash: 
-  - git add -A
-  - git add --all
-  - git add .
-- Hacer commit
-  - git commit -m 'mensaje para este commit'
-- Hacer merge
-  - git merge <ramaOrigen> previamente se hace git checkout <ramaDestino>
+  - `git add -A`
+  - `git add --all`
+  - `git add .`
+- Hacer commit: `git commit -m 'mensaje para este commit'`
+- Hacer merge: `git merge <ramaOrigen> previamente se hace git checkout <ramaDestino>`
 
 ## Rectificar
-- Si se ha subido a remoto: git revert HEAD
-- Dar un paso atrás y dejar ficheros en staged: git reset --soft HEAD^
+- Si se ha subido a remoto: `git revert HEAD`
+- Dar un paso atrás y dejar ficheros en staged: `git reset --soft HEAD^`
 
-### Etiguetar
-- Etiquetar: git tag v0.0.2 -m "Segunda versión, cambios menores"
-- Ver etiquetas: git tag
-- Etiquetar a posteriori git tag -a v1.2 9fceb02
+### Etiquetar
+- Etiquetar: `git tag v0.0.2 -m "Segunda versión, cambios menores"`
+- Ver etiquetas: `git tag`
+- Etiquetar a posteriori `git tag -a v1.2 9fceb02`
