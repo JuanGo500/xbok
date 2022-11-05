@@ -33,7 +33,7 @@
 - Si se ha subido a remoto: `git revert HEAD`
 - Dar un paso atrás y dejar ficheros en staged: `git reset --soft HEAD^`
 
-### Etiquetar
+## Etiquetar
 - Etiquetar: `git tag v0.0.2 -m "Segunda versión, cambios menores"`
 - Ver etiquetas: `git tag`
 - Etiquetar a posteriori `git tag -a v1.2 9fceb02`
