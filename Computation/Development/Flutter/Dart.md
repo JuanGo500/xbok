@@ -1,6 +1,6 @@
-# Dart Core Syntax
+# Dart basics
 
-## Basics
+## Variables
 - All that goes into a variable is an object
 - Every object is an instance of a class
 - Except the class Object, every class only has one superclass
