@@ -1,19 +1,24 @@
 # AI
 
-# Use Cases
+## Use Cases
 
 
-# Workloads
+### Workloads
 - Machine Learning
 - Anomaly Detection
 - Computer Vision
 - Natural Language
 - Knowledge Mining
 
-# Principles
+### Principles
 - Reliability and Security
 - Privacy
 - Transparency
 - Accountability
 - Fairness
 - Inclusivity
+
+### Machine Learning
+- Regression
+- Classification
+- Clustering
