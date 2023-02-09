@@ -8,8 +8,20 @@
 - A constant has all letters in uppercase
 
 ## Types
-- Text: str
-- Numeric: int, float, complex
-- Structures: tuple, list, dict, range, set, frozenset
-- Other: bool, byte, bytearray, memoryview, NoneType
+- Numbers (int, float, complex): x = 10 
+- Strings (str): string = "Hello World" 
+- Structures 
+    - Lists: list = [1, 2, 3, 4] 
+    - Tuples: tuple = (1, 2, 3, 4) 
+    - Sets and frozensets: set = {1, 2, 3, 4} 
+    - Dictionaries: dict = {'name': 'John', 'age': 25}
+    - Range: 
+- Boolean: is_valid = True 
+- NoneType: nothing = None
+- Memory:
+    - Binary: binary = 0b1010
+    - byte
+    - bytearray
+    - memoryview
+
 - get the data type ```type(object)```
