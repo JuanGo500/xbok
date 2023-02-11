@@ -1,0 +1,19 @@
+# Navigate
+
+## Basics
+```
+() => Navigator.push(context, MaterialPageRoute(builder: (context) => NewView()))
+```
+You navigate by using an anonymous function that pushes a route into Navigator.
+
+Navigator manages a stack of routes.
+
+A route is created using another anonymous function as a parameter. This function takes context as a parameter and creates an object of the target view class.
+
+It is possible to send objects through the initialization method of the target page.
+
+
+
+
+## References
+https://flutter.dev/docs/cookbook/navigation/navigation-basics
