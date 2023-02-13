@@ -33,4 +33,13 @@ print(df)
 ## Localizar datos
 - Por número de índice: print(ds.iloc[[1]])
 - Por nombre de índice: print(ds.loc[["cobra"]])
+
+
+## Main functions
+- Reading data into a dataframe: `df = pd.read_csv('example.csv').`
+- Selecting and filtering data: `df[df['column_name'] == value]` 
+- Applying aggregate functions: `df.groupby('column_name').agg({'other_column':'sum'})`
+- Sorting and grouping data: `df.sort_values(by=['column_name'])`
+- Merging and joining datasets: `df1.merge(df2, on='column_name', how='inner')`
+- Manipulating data with Python-specific code: `df['new_column'] = df['column_name'].apply(lambda x: x`
   

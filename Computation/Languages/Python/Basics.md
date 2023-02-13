@@ -1,5 +1,10 @@
 # Python basics
 
+## Idiosyncratic
+- Indented spaces (typically 4) instead of braces
+
+
+
 ## Variables
 - A variable is created the moment you first assign a value to it.```x=1```
 - Variables do not need to be declared with any particular type, and can even change type after they have been set.
