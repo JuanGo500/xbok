@@ -1,12 +1,21 @@
-Estructura_aplicacion.md
+# Application structure
 
+## Import
+Every file imports the packages that it needs.
+```
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'ad_state.dart';
 import 'package:provider/provider.dart';
 import 'poema.dart';
 import 'model.dart';
+```
 
+## Top widget
+- There is a widget that is at the top of the hierarchy. 
+- If the class is stateful, the state returns a MaterialApp widget.
+- the home parameter of the MaterialApp widget is the home page.
+```
 class MyApp extends StatefulWidget {
   // This widget is the root of your application.
   MyAppState createState() => MyAppState();
@@ -25,7 +34,14 @@ class MyAppState extends State<MyApp> {
     );
   }
 }
+```
 
+## Visuals
+- The app has one or several pages to navigate
+- Pages receive input from users
+- Pages query the model to update its state
+
+```
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
@@ -36,28 +52,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   BannerAd banner;
-  Poemario poemario = Poemario();
+  Poemario poemario = Poemario(); //query to the model
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final adState = Provider.of<AdState>(context);
-
-    adState.initialization.then(
-      (status) {
-        setState(
-          () {
-            banner = BannerAd(
-              adUnitId: adState.bannerAdUnitId,
-              size: AdSize.banner,
-              request: AdRequest(),
-              listener: adState.adListener,
-            )..load();
-          },
-        );
-      },
-    );
-  }
-
+    final adState = Provider.of<AdState>(context); //auxiliary services
+```
+The declarative pattern specifies all the visible objects and embeds the actions in the widget structure.
+```
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -108,3 +110,23 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+```
+
+## Auxiliary services
+There are other services that provide auxiliary content like adds.
+
+    adState.initialization.then(
+      (status) {
+        setState(
+          () {
+            banner = BannerAd(
+              adUnitId: adState.bannerAdUnitId,
+              size: AdSize.banner,
+              request: AdRequest(),
+              listener: adState.adListener,
+            )..load();
+          },
+        );
+      },
+    );
+  }
