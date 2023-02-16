@@ -111,6 +111,20 @@ The declarative pattern specifies all the visible objects and embeds the actions
   }
 }
 ```
+## Model
+The model can have state (can be updated by the users actions) or can be stateless.
+```
+class Poemario {
+  List<String> ficheros = [
+    'PoemaAntesQueTu.md',
+    'PoemaAQueMeLoDecis.md',
+    'PoemaAsomabaASusOjos.md',
+    'PoemaComoEnUnLibro.md',
+    'PoemaComoSeArranca.md'
+    ]
+   }
+ ```
+
 
 ## Auxiliary services
 There are other services that provide auxiliary content like adds.
@@ -130,3 +144,4 @@ There are other services that provide auxiliary content like adds.
       },
     );
   }
+´´´
