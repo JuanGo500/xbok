@@ -112,7 +112,9 @@ The declarative pattern specifies all the visible objects and embeds the actions
 }
 ```
 ## Model
-The model can have state (can be updated by the users actions) or can be stateless.
+- The model can have state (can be updated by the users actions) or can be stateless.
+- If it is stateful, it is always updated by the View.
+- The model can't change the View.
 ```
 class Poemario {
   List<String> ficheros = [
