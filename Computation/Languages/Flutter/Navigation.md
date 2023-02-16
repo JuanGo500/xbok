@@ -12,8 +12,18 @@ A route is created using another anonymous function as a parameter. This functio
 
 It is possible to send objects through the initialization method of the target page.
 
+## Pass a parameter
+It is possible to pass information to the new page through a named parameter.
+```
+//Source class
+() => Navigator.push(context, MaterialPageRoute(builder: (context) => NewView(message:"A message")))
 
-
+//Target class
+String message
+class AClass {
+AClass (this.message)
+}
+```
 
 ## References
 https://flutter.dev/docs/cookbook/navigation/navigation-basics
