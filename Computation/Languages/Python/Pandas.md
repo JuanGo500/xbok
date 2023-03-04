@@ -56,5 +56,9 @@ print(df)
 - Applying aggregate functions: `df.groupby('column_name').agg({'other_column':'sum'})`
 - Sorting and grouping data: `df.sort_values(by=['column_name'])`
 - Merging and joining datasets: `df1.merge(df2, on='column_name', how='inner')`
-- Manipulating data with Python-specific code: `df['new_column'] = df['column_name'].apply(lambda x: x`
+- Manipulating data with Python-specific code: `df['new_column'] = df['column_name'].apply(lambda x: x)`
+
+## Transformation
+
+- Find duplicates: `df.duplicated()`
   
