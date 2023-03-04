@@ -1,7 +1,15 @@
 # Matplotlib
 
-## Instalar
+
+[Documentation](https://matplotlib.org/)
+
+## Install
 En Mac: python3 -mpip install matplotlib
+
+## Import
+```python
+import matplotlib as plt
+```
 
 ## Barplot
 
