@@ -1,4 +1,5 @@
 # Pandas
+Al usar [] en una expresión, el resultado es un dataframe.
 
 ## Cargar datos
 
@@ -31,12 +32,26 @@ print(df)
 ```
 
 ## Localizar datos
-- Por número de índice: print(ds.iloc[[1]])
-- Por nombre de índice: print(ds.loc[["cobra"]])
+- Por número de índice: `df.iloc[[1]]`
+- Varias filas: `df.iloc[[0,2]]` 
+- Por nombre de índice: print(df.loc[["day1"]])
 
+```
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+
+print(df) 
+```
 
 ## Main functions
-- Reading data into a dataframe: `df = pd.read_csv('example.csv').`
+- Describir los datos: `df.describe()`
+- Primeras filas: `df.head()`
 - Selecting and filtering data: `df[df['column_name'] == value]` 
 - Applying aggregate functions: `df.groupby('column_name').agg({'other_column':'sum'})`
 - Sorting and grouping data: `df.sort_values(by=['column_name'])`
