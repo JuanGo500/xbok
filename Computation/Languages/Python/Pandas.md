@@ -61,4 +61,6 @@ print(df)
 ## Transformation
 
 - Find duplicates: `df.duplicated()`
+- Remove rows: `df = df.drop(df.index[[0, 1]])`
+- Remove columns: `df = df.drop('edad', axis=1)`
   
