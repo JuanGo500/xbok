@@ -63,5 +63,5 @@ print(df)
 - Find duplicates: `df.duplicated()`
 - Remove rows: `df = df.drop(df.index[[0, 1]])`
 - Remove columns: `df = df.drop('edad', axis=1)`
-- Fill na values: `df.Age.fillna(mean_age,inplace=True)`
+- Fill na values: `df.Age.fillna(mean_age,inplace=True)` inplace updates de df, if false, it creates a copy
   
