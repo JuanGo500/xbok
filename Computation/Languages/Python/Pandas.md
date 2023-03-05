@@ -1,12 +1,23 @@
 # Pandas
 Al usar [] en una expresión, el resultado es un dataframe.
 
-## Cargar datos
+## Load data
 
+### From csv
 ```python
 ubicacion="/Users/Juan/Dropbox/XND/Data/Apple_Sales.csv"
 datos=pd.read_csv(ubicacion)
 ```
+
+### From json
+```python
+file=""/Users/Juan/Dropbox/XND/Data/Apple_Sales.json"
+data=pd.read_json(file)
+```
+
+### Export data
+```python
+df.to_json("name.json",orient="records")
 
 ## Crear un dataset
 1. Para crear un dataset se incluyen listas de valores para cada atributo.
@@ -16,13 +27,11 @@ import pandas as pd
 
 miDataset= {
     "coche":["seat","citroen"],
-    "moto":["kawasaki","vespa"],
-    "persona":["juan","luis","pepe"]
+    "moto":["kawasaki","vespa"]
 }
 
 ds=pd.DataFrame(miDataset)
 
-print(ds)
 ```
 2. También se puede incluir una lista de listas de valores, una lista de índices y una lista de columnas
 
