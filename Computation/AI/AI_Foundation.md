@@ -42,5 +42,5 @@ Uses a model to predict labels from features.
 Uses a model to discover patterns to group data.
 - Clustering
 
-## Reinforcement learning
+### Reinforcement learning
 Learns from a loss function.
