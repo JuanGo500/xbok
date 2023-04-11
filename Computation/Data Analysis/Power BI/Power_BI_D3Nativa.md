@@ -30,6 +30,7 @@ npm i powerbi-visuals-api --save-dev
 ## Not visible in the service
 A pesar de haber arrancado, no se visualizaba en el servicio. La solución fue entrar en https://localhost:8080/assets/status 
 y volver a refrescar el visual. Se autoriza en el navegador la dirección.
+In Edge: `about:flags> search "local host" > enable "localhost without certificate"`
 
 # References
 ## Official documentation
