@@ -2,7 +2,7 @@
 
 1. Install nodes.js.
 - Installation pbiviz: `npm i -g powerbi-visuals-tools`
-- Installation certificate Windows: `Windows pbiviz --install-cert`
+- Installation certificate Windows: `pbiviz --install-cert`
 
 2. Set up Power BI service for developing a visual.
 
