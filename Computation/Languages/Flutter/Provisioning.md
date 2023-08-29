@@ -12,5 +12,8 @@ Android Studio>More actions>Virtual Device Manager>Create emulator
 
 ### Install VSCode
 ### Install Git
-### Signup Github
+### Signin Github
+
+## Project creation
+`flutter create --org com.compania nombreapp`
 
