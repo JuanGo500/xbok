@@ -16,4 +16,3 @@ Android Studio>More actions>Virtual Device Manager>Create emulator
 
 ## Project creation
 `flutter create --org com.compania nombreapp`
-
