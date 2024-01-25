@@ -11,3 +11,6 @@
 # Streaming semantic model prerrequisite
 - When creating a streaming semantic model use the option *Allow historic analysis*
 - Number and date are important to keep the consistency of types.
+
+# Migrate flows and solutions
+- It is necessary to select *create new* for the flows
