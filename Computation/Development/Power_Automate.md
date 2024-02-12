@@ -14,3 +14,9 @@
 
 # Migrate flows and solutions
 - It is necessary to select *create new* for the flows
+
+# Parse a CSV
+- OneDrive get file
+- Initialize an array variable with `chunk(split(replace(body('GetFile'),decodeUriComponent('%0D%0A'),','),','),4)`
+- Loop with Apply to each
+- Create a Sharepoint item atribute use `item()[0]`
