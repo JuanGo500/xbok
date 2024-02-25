@@ -4,7 +4,7 @@
     - Use a template for First rows from the table
     - It will have the format [{"Value":234343}]
     - It is an array of objects
-- Use a For each
+- Use a *For each*
 - Insert inside a *Insert rows in Power BI dataset*
 - You can use the Value from the previous step
 
