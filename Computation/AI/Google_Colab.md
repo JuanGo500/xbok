@@ -27,3 +27,8 @@ If necessary, inspect files
 
 #!cat '/content/gdrive/My Drive/valuator.py'
 ```
+## Subdependencies
+The import statements declared in the .py file will work.
+For those modules installed by default in the environment like `pandas`, there is no need for reinstalling.
+For those modules not pre-installed like `numpy_financial`, use `!pip install name_of_module` in the notebook.
+F
