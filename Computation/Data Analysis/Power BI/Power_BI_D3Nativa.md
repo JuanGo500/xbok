@@ -1,8 +1,11 @@
 # Enviroment configuration
 
-1. Install node.js.
+1. Install node.js
+
 
 2. Pbiviz configuration
+- Using Power Shell as an admin
+- Change script policy: `set-executionpolicy unrestricted –force`
 - Installation pbiviz: `npm i -g powerbi-visuals-tools`
 - Installation certificate Windows: `pbiviz --install-cert`
 
