@@ -66,8 +66,35 @@ Shares of files. It needs a storage account. You can upload using AZCopy. Two ne
 
 NoSQL key-value store. It is good for storing large amounts of non-relational data. Elements: partition key, row key, timestamp, properties.
 
-## Choose an API for Azure Cosmos DB
-https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api
+## Types of databases
 
-## Roles
-https://learn.microsoft.com/en-us/training/modules/explore-roles-responsibilities-world-of-data/2-explore-job-roles
+- Relational
+
+- Non-relational
+    - Key-value
+    - Document: is a key-value where the value is a json document
+    - Column family: columns can be divided
+    - Graph
+
+## Types of workloads
+
+- Online Transactional Processing (OLTP): CRUD and ACID
+- Online Analytical Processing (OLAP)
+
+## ACID
+
+- Atomicity: each transaction is treated as a single unit, which succeeds completely or fails completely.
+
+- Consistency: transactions can only take the data in the database from one valid state to another.
+
+- Isolation: concurrent transactions cannot interfere with one another, and must result in a consistent database state.
+
+- Durability: when a transaction has been committed, it will remain committed.
+
+## Links
+
+- Choose an API for Azure Cosmos DB: https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api
+
+- Roles: https://learn.microsoft.com/en-us/training/modules/explore-roles-responsibilities-world-of-data/2-explore-job-roles
+
+
