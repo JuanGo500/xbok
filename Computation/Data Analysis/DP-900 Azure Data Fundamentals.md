@@ -19,7 +19,9 @@
 - Pricing models:
     - pay-as-you-go
     - reserved capacity
-    - software as a service (SaaS) model
+    - spot
+    - subscription (tipically SAAS)
+    - tier
 
 ## Responsibility Matrix for Cloud Service Categories
 
