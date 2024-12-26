@@ -43,23 +43,28 @@
 1. Blob storage
 
 Store large amounts of unstructured object data, such as text or binary data. Container has permissions, files is only a domain name.
-    Types:
-    - Block blobs: store text and binary data, up to about 4.7 TB.
-    - Append blobs: optimized for append operations, such as logging.
-    - Page blobs: store random access files up to 8 TB.
-    Tiers:
-    - Hot: optimized for storing data that is accessed frequently.
-    - Cool: optimized for storing data that is infrequently accessed and stored for at least 30 days.
-    - Archive: optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
+
+Types:
+- Block blobs: store text and binary data, up to about 4.7 TB.
+- Append blobs: optimized for append operations, such as logging.
+- Page blobs: store random access files up to 8 TB.
+
+Tiers:
+- Hot: optimized for storing data that is accessed frequently. Hot is the default.
+- Cool: optimized for storing data that is infrequently accessed and stored for at least 30 days.
+- Archive: optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
 
 2. Data Lake Storage
 
-Store big data. You must enable hierarchical namespace when you create the account.
-- OneLake is built upon Azure Data Lake Gen 2.
+Store big data. You must enable hierarchical namespace when you create the account. OneLake is built upon Azure Data Lake Gen 2.
 
-3. Azure files: shares of files. It needs a storage account. You can upload using AZCopy. Two network protocols: Server Message Block (SMB) and Network File System (NFS).
+3. Azure files
 
-4. Azure Table Storage: NoSQL key-value store. It is good for storing large amounts of non-relational data. Elements: partition key, row key, timestamp, properties.
+Shares of files. It needs a storage account. You can upload using AZCopy. Two network protocols: Server Message Block (SMB) and Network File System (NFS).
+
+4. Azure Table Storage
+
+NoSQL key-value store. It is good for storing large amounts of non-relational data. Elements: partition key, row key, timestamp, properties.
 
 ## Choose an API for Azure Cosmos DB
 https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api
