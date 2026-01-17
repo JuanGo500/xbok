@@ -4,9 +4,11 @@
 
 ## Early termination policiese
 
--**Bandit Policy**: This policy is based on a **slack factor** (ratio) or **slack amount** (absolute value). It terminates any trial where the primary metric falls outside the allowed slack compared to the best-performing job at a given interval.
--**Median Stopping Policy**: This policy calculates the running averages of the primary metric across all training jobs. It stops a trial if its best primary metric is worse than the **median of the running averages** for all trials at that same interval.
--**Truncation Selection Policy**: This policy cancels a specific **percentage** (an integer between 1 and 99) of the lowest-performing trials at each evaluation interval.
+- **Bandit Policy**: This policy is based on a **slack factor** (ratio) or **slack amount** (absolute value). It terminates any trial where the primary metric falls outside the allowed slack compared to the best-performing job at a given interval.
+
+- **Median Stopping Policy**: This policy calculates the running averages of the primary metric across all training jobs. It stops a trial if its best primary metric is worse than the **median of the running averages** for all trials at that same interval.
+
+- **Truncation Selection Policy**: This policy cancels a specific **percentage** (an integer between 1 and 99) of the lowest-performing trials at each evaluation interval.
 
 **No Termination Policy (Default)**: If no specific policy is defined, the system allows all trial jobs to execute until they reach their intended completion.
 
