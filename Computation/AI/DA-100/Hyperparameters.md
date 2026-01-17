@@ -2,7 +2,7 @@
 
  Azure Machine Learning hyperparameter tuning (managed via **SweepJobs**), early termination policies improve efficiency by automatically ending trial jobs that show poor performance relative to others.
 
-## Early termination policiese
+## Early termination policies
 
 - **Bandit Policy**: This policy is based on a **slack factor** (ratio) or **slack amount** (absolute value). It terminates any trial where the primary metric falls outside the allowed slack compared to the best-performing job at a given interval.
 
