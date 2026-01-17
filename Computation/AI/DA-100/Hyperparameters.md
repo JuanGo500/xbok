@@ -14,9 +14,13 @@
 
 ## Configuration and Strategy
 The effectiveness of these policies is managed by two key parameters:
+
 -**Evaluation Interval**: Specifies the frequency at which the policy is applied (e.g., every time a metric is logged or every other time).
+
 -**Delay Evaluation**: Postpones the first policy check for a set number of intervals to prevent the **premature termination** of jobs before they have a chance to establish a performance baseline.
 
 The sources offer the following strategic advice for selection:
--**Conservative**: The **Median Stopping Policy** is recommended for saving approximately **25%-35% in costs** without risking the loss of promising jobs [11].
+
+-**Conservative**: The **Median Stopping Policy** is recommended for saving approximately **25%-35% in costs** without risking the loss of promising jobs.
+
 -**Aggressive**: For higher cost savings, the **Bandit Policy** with a smaller slack or the **Truncation Selection Policy** with a larger percentage should be used.
