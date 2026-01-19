@@ -1,7 +1,16 @@
 # Metrics
 
 ## 1. Classification Metrics
-Classification is used when the target is a discrete category (e.g., "Spam" or "Not Spam"). Most metrics are derived from the Confusion Matrix.
+Classification is used when the target is a discrete category (e.g., "Spam" or "Not Spam"). 
+
+### Confusion matrix
+
+|Actual/Prediction|False|True|
+|-|-|-|
+|False|TN|FP (Error 1)|
+|True|FN (Error 2)|TP|
+
+### Metrics
 
 - **Accuracy**: The ratio of correct predictions to total predictions. It is often misleading if the dataset is imbalanced (e.g., 99% of samples are "Healthy").
 
@@ -12,6 +21,8 @@ Classification is used when the target is a discrete category (e.g., "Spam" or "
 - **F1-Score**: The harmonic mean of Precision and Recall. It provides a single score that balances both, especially useful for imbalanced data.
 
 - **AUC-ROC**: Measures the model's ability to distinguish between classes at various threshold levels.
+
+
 
 ## 2. Regression Metrics
 Regression is used when predicting a continuous numerical value (e.g., the price of a house or the temperature).
