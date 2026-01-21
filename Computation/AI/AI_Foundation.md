@@ -1,4 +1,4 @@
-# AI
+# AI Foundation
 
 ## Use Cases
 
