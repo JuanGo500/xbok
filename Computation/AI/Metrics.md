@@ -14,9 +14,6 @@ Classification is used when the target is a discrete category (e.g., "Spam" or "
 
 - **Accuracy**: The ratio of correct predictions to total predictions. It is often misleading if the dataset is imbalanced (e.g., 99% of samples are "Healthy").
 
-$$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
-
-
 - **Precision**: Out of all predicted positives, how many were actually positive? (Focuses on avoiding False Positives).
 
 - **Recall (Sensitivity)**: Out of all actual positives, how many did the model find? (Focuses on avoiding False Negatives).
