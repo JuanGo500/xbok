@@ -14,9 +14,15 @@ Classification is used when the target is a discrete category (e.g., "Spam" or "
 
 - **Accuracy**: The ratio of correct predictions to total predictions. It is often misleading if the dataset is imbalanced (e.g., 99% of samples are "Healthy").
 
+```Accuracy=TP/All```
+
 - **Precision**: Out of all predicted positives, how many were actually positive? (Focuses on avoiding False Positives).
 
+```Precision=TP/Predicted positives=TP/TP+Error 1```
+
 - **Recall (Sensitivity)**: Out of all actual positives, how many did the model find? (Focuses on avoiding False Negatives).
+
+```Recall=TP/Actual positives=TP/TP+Error 2```
 
 - **F1-Score**: The harmonic mean of Precision and Recall. It provides a single score that balances both, especially useful for imbalanced data.
 
