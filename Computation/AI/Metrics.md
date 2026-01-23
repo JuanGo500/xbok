@@ -26,7 +26,11 @@ Classification is used when the target is a discrete category (e.g., "Spam" or "
 
 - **F1-Score**: The harmonic mean of Precision and Recall. It provides a single score that balances both, especially useful for imbalanced data.
 
+```F1=2(precision.recall/precision+recall)```
+
 - **AUC-ROC**: Measures the model's ability to distinguish between classes at various threshold levels.
+
+![AU-ROC](img/auc-roc.png)
 
 
 
