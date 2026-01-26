@@ -136,6 +136,16 @@ flutter pub run flutter_launcher_icons:main
 - Detectar API deprecadas
 `dart fix --dry-run`
 
+## Actualización de versión Gradle
+Al actualizarse flutter, Java y Gradle puede haber problemas de dependencias.
+
+Lo mejor es crear un proyecto nuevo en Android Studio y copiar los ficheros.
+
+En build.gradle.tks
+minSdk=27
+ndkVersion = "27.0.12077973"
+
+Las versiones se especifican en los errores.
 
 ## Referencias
 

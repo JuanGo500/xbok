@@ -20,3 +20,5 @@ https://www.obviously.ai/
 
 DataRobot
 https://www.datarobot.com/
+
+Google ML Crash course https://developers.google.com/machine-learning/crash-course
