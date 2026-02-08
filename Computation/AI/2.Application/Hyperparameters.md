@@ -15,19 +15,20 @@ You can define hyperparameters as either discrete or continuous values.
 Example: choice(16, 32, 64, 128) or choice(range(1, 10)).
 
 - Continuous Hyperparameters: Specified using a distribution. Azure ML supports:
-uniform(low, high): Values are uniformly distributed between low and high.
-loguniform(low, high): Drawn according to a log-uniform distribution (useful for learning rates).
-normal(mu, sigma): Values from a normal distribution.
-lognormal(mu, sigma): Values from a log-normal distribution.
+- uniform(low, high): Values are uniformly distributed between low and high.
+- loguniform(low, high): Drawn according to a log-uniform distribution (useful for learning rates).
+- normal(mu, sigma): Values from a normal distribution.
+- lognormal(mu, sigma): Values from a log-normal distribution.
 
 ## 2. Sampling Methods
+
 This is the algorithm used to pick combinations from your search space.
 
 - Random Sampling: Randomly selects values from the defined space. Supports both discrete and continuous hyperparameters. Best for getting a good result quickly or for initial exploration.
 
 - Grid Sampling: Systematically tries every possible combination in the search space. Only works with discrete parameters. Best when the search space is small and you have a high budget.
 
-- Bayesian Sampling: Uses a machine learning model to pick the next set of hyperparameters based on previous results to improve the metric. Best for expensive-to-train models; it "learns" which areas of the space are better.
+- Bayesian Sampling: Uses a machine learning model to pick the next set of hyperparameters based on previous results to improve the metric. Best for expensive-to-train models; it "learns" which areas of the space are better. It doesn't allow an early termination policy.
 
 ## 3. Early termination policies
 
