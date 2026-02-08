@@ -1,5 +1,11 @@
 # Hyperparameters
-In Azure Machine Learning (specifically via HyperDrive or Sweep Jobs), the selection of hyperparameters involves three main components: defining the search space, choosing a sampling method, and optionally applying an early termination policy.
+
+The selection of hyperparameters involves three steps:
+- defining the search space
+- choosing a sampling method
+- optionally applying an early termination policy.
+
+Azure ML uses HyperDrive or Sweep Jobs to select automatically the best set of parameters.
 
 ## 1. Hyperparameter Search Space
 
