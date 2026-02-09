@@ -4,23 +4,15 @@
 
 ![](img/0.png)
 
-Based on the standard architecture of Azure Machine Learning Studio, here is the breakdown of the numbered components in your image, representing the hierarchy and key resources of the ecosystem:
-
+Based on the standard architecture of Azure ML Studio, here is the breakdown of the numbered components, representing the key resources of the ecosystem:
 
 1. Microsoft Azure (Cloud): This represents the global Azure cloud environment where all infrastructure resides.
-
 2. Subscription / Resource Group: The first level of organization used to manage billing and access to services.
-
 3. Workspace: centralized Azure ML resource used to manage all assets, such as models, experiments, and compute.
-
-4. Azure Machine Learning Service: The main engine that orchestrates the entire machine learning lifecycle.
-
+4. Azure ML Service: The main engine that orchestrates the entire machine learning lifecycle.
 5. Storage (Azure Storage Account): The default data store for the workspace, where datasets and scripts are saved.
-
 6. Azure Key Vault: Securely stores secrets and sensitive information, such as database keys or tokens.
-
 7. Application Insights: Used for monitoring and logging performance metrics of your deployed models.
-
 8. Azure Container Registry (ACR): Registers and manages the Docker images used for training and model deployment.
 
 **Interface**
@@ -37,17 +29,16 @@ Based on the standard architecture of Azure Machine Learning Studio, here is the
 ![](img/3.png)
 ![](img/4.png)
 
+
 ## Roles
 
 - **Owner**: Gets full access to all resources, and can grant access to others using access control.
 - **Contributor**: Gets full access to all resources, but can't grant access to others.
-
 - **Reader**: Can only view the resource, but isn't allowed to make any changes.
 
-Additionally, Azure Machine Learning has specific built-in roles you can use:
+Additionally, Azure ML has specific built-in roles you can use:
 
 - **AzureML Data Scientist**: Can perform all actions within the workspace, except for creating or deleting compute resources, or editing the workspace settings.
-
 - **AzureML Compute Operator**: Is allowed to create, change, and manage access the compute resources within a workspace.
 
 ## Processes
@@ -56,10 +47,10 @@ Additionally, Azure Machine Learning has specific built-in roles you can use:
 
 Four alternatives:
 
-- Use the user interface in the **Azure portal** to create an Azure Machine Learning service.
+- Use the user interface in the **Azure portal** to create an Azure ML service.
 - Create an **Azure Resource Manager** (**ARM**) template. [Learn how to use an ARM template to create a workspace](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-workspace-template?tabs=azcli%3Fazure-portal%3Dtrue).
-- Use the **Azure Command Line Interface** (**CLI**) with the Azure Machine Learning CLI extension. [Learn how to create the workspace with the CLI v2](https://learn.microsoft.com/en-us/training/modules/create-azure-machine-learning-resources-cli-v2/).
-- Use the **Azure Machine Learning Python SDK**.
+- Use the **Azure Command Line Interface** (**CLI**) with the Azure ML CLI extension. [Learn how to create the workspace with the CLI v2](https://learn.microsoft.com/en-us/training/modules/create-azure-machine-learning-resources-cli-v2/).
+- Use the **Azure ML Python SDK**.
     - Código
         
         ```python
@@ -87,7 +78,6 @@ Four alternatives:
 ### Python SDK
 
 [Azure SDK Python](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-ml-readme?view=azure-python)
-
 [API Reference](https://learn.microsoft.com/en-us/python/api/azure-ai-ml/azure.ai.ml?view=azure-python)
 
 ```python
@@ -122,13 +112,9 @@ az ml compute create --name aml-cluster --size STANDARD_DS3_v2 --min-instances 0
 These are the types of compute:
 
 - **Compute instances**: virtual machine in the cloud, managed by the workspace. Ideal to run (Jupyter) notebooks.
-
 - **Compute clusters**: On-demand clusters of CPU or GPU compute nodes in the cloud, managed by the workspace. Ideal for production workloads as they  scale.
-
 - **Kubernetes clusters**: Allows you to create or attach an Azure Kubernetes Service (AKS) cluster. Ideal to deploy trained machine learning models in production scenarios.
-
 - **Attached computes**: Allows you to attach other Azure compute resources to the workspace, like Azure Databricks or Synapse Spark pools.
-
 - **Serverless compute**: A fully managed, on-demand compute you can use for training jobs.
 
 ## Datastores
