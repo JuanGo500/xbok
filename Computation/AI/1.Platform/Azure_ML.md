@@ -125,12 +125,17 @@ It is not a store of data but a way to connect to Azure Storage.
 
 When a workspace is created, an Azure Storage account is created and automatically connected to the workspace. As a result, you have four datastores already added to your workspace:
 
-- `workspaceblobstore`: Connects to the Blob Storage of the Azure Storage account created with the workspace. Specifically the `azureml-blobstore-...` container. Set as the default datastore, which means that whenever you create a data asset and upload data, you store the data in this container.
-- `workspaceartifactstore`: Connects to the `azureml` container of the Azure Storage account created with the workspace. Used to store models, experiment logs when running jobs.
-- `workspaceworkingdirectory`: Connects to the file share of the Azure Storage account created with the workspace used by the **Notebooks** section of the studio. Whenever you upload files or folders to access from a compute instance, the files or folders are uploaded to this file share. Only in interactive development.
-- `workspacefilestore`: Connects to the file share of the Azure Storage account created with the workspace. Specifically the `azureml-filestore-...` file share.
 
-Data to be trained is in the workspaceblobstorage. Trained models and metrics are in the workspaceartifactstorage.
+| Datastore Name | Data Storage Type | Data Storage Name | Description |
+| :--- | :--- | :--- | :--- |
+| **workspaceblobstore** | Blob container | azureml-blobstore-{workspace-id} | Stores data uploads, job code snapshots, and pipeline data cache. Connects to the Blob Storage of the Azure Storage account created with the workspace. Specifically the `azureml-blobstore-...` container. Set as the default datastore, which means that whenever you create a data asset and upload data, you store the data in this container.|
+| **workspaceworkingdirectory** | File share | code-{GUID} | Connects to the file share of the Azure Storage account created with the workspace used by the **Notebooks** section of the studio. Whenever you upload files or folders to access from a compute instance, the files or folders are uploaded to this file share. Only in interactive development. |
+| **workspacefilestore** | File share | azureml-filestore-{workspace-id} | Alternative container for data upload. |
+| **workspaceartifactstore** | Blob container | azureml | Storage for assets such as metrics, models, and components, experiment logs.|
+
+Data to be trained is in the workspaceblobstorage. 
+
+Trained models and metrics are in the workspaceartifactstorage.
 
 [MS Learn](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2&tabs=uri-file-example%2Ccli-data-create-example#datastore)
 
