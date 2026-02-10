@@ -1,8 +1,8 @@
-# Metrics
+# Regression
 
-## Classification Metrics
+## Definition
 
- Regression is a Supervised Learning task used to predict a continuous numeric value (e.g., price, temperature, or age).
+Regression is a Supervised Learning task used to predict a continuous numeric value (e.g., price, temperature, or age).
 
 ## Algorithms
 
