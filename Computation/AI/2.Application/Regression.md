@@ -12,7 +12,13 @@
 
 - Regularization strength (Alpha/Lambda): Controls how much you penalize large coefficients to prevent overfitting.
 
-- Fit Intercept: A boolean (True/False) determining whether to calculate the "b" in $y = mx + b$.
+- Fit Intercept: A boolean (True/False) determining whether to calculate the _b_ in: $y = mx + b$.
+
+![Linear regression](./img/Linear_regression.png)
+
+Multiple  regresion can include many variables:  $y = a + b_1x_1 + b_2x_2 + … + b_nx_n$.
+
+![Polinomial regression](./img/Polinomial_regression.png)
 
 #### Poisson Regression
 
@@ -55,7 +61,7 @@
 - Number of Iterations (Epochs): How many times the model sees the entire dataset.
 
 
-## 2. Regression Metrics
+## Regression Metrics
 
 Regression is used when predicting a continuous numerical value (e.g., the price of a house or the temperature).
 
@@ -66,3 +72,14 @@ Regression is used when predicting a continuous numerical value (e.g., the price
 - **Root Mean Squared Error (RMSE)**: The square root of MSE. It brings the error metric back to the original units while still penalizing outliers.
 
 - **R-Squared (R^2)**: Known as the "coefficient of determination." It represents the proportion of variance in the dependent variable that is predictable from the independent variables. An R^2 of 1.0 indicates a perfect fit.
+
+## Comparison
+
+| Algoritmo | Mejor usado para... | Complejidad del Modelo | Sensibilidad a Outliers | Característica Visual Clave |
+| :--- | :--- | :--- | :--- | :--- |
+| **Simple Linear Regression** | Relaciones directas y proporcionales entre dos variables. | Baja | Alta | Una línea recta que atraviesa una nube de puntos. |
+| **Polynomial Regression** | Capturar relaciones curvas (ej. curvas de crecimiento). | Media | Alta | Una curva suave que puede tener múltiples dobleces. |
+| **Support Vector Regression (SVR)** | Datasets complejos donde se busca ignorar el ruido menor. | Alta | Baja | Un "tubo" (épsilon-insensible) que encapsula los datos. |
+| **Decision Tree Regression** | Capturar interacciones no lineales y cambios de "escalón". | Alta | Media | Una línea tipo "escalera" que sigue la tendencia de los datos. |
+| **Random Forest Regression** | Predicciones de alto rendimiento en datasets grandes y complejos. | Muy Alta | Baja | Un conjunto de muchos árboles que suaviza los errores individuales. |
+| **Ridge / Lasso Regression** | Prevenir el sobreajuste (overfitting) en modelos con muchas variables. | Media | Media | Similar a la lineal, pero la línea está "penalizada" para ser menos pronunciada. |
