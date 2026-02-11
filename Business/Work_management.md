@@ -17,9 +17,8 @@ An agent is an entity that can perceive internal and external states, can create
 Primitive types of actions are:
 
 - Perceive
-- Move
 - Think
-- Communicate
+- Move
 
 
 ## Definition of work
