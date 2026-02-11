@@ -1,10 +1,12 @@
-# Work XBOK
+# Work
 
-## 1. What is Work
+The purpose of this section is to define work and to describe a good practice to organize it.
 
-### The Cycle of Growth
+## The cycle of agency
 
-The cycle of growth is a pattern that is observed in the relationship between Conscience, Material and Information domains.
+The cycle of agency is a pattern that is observed in the interaction of an agent with the world across Physics, Information and Conscience domains.
+
+An agent is an entity that can perceive internal and external states, can create representations of those states and can act to change those states.
 
 - **Action** is a change realized by an agent that tries to fulfill a purpose.
 
@@ -12,23 +14,51 @@ The cycle of growth is a pattern that is observed in the relationship between Co
 
 - **Conscience** is the generation of purpose based on information.
 
-### Definition of Work
+Primitive types of actions are:
 
-Work is a type of action governed by a program.
+- Perceive
+- Move
+- Think
+- Communicate
 
-A program is any type of design-time _course of action_ description.
 
-A workload is the work performed by a work agent.
+## Definition of work
+
+Work is a 
+
+type of action governed by a program.
+
+A program is any type of design-time _course of action_ statement.
+
+## Workloads
+
+Workloads are instances of work performed by a work agent.
 
 A work agent is a human or machine capable of performing work.
 
-### Types of workload
-- communication: hear, speak, agree
-- analysis: read, consolidate, explain
-- design: research, solve, plan
-- physical interaction: provision, make, control
+### Types of workloads
 
-## 2. How to organize work?
+#### Physical oriented
+
+- provision
+- make
+- control
+
+#### Information oriented
+
+- perceive
+- model
+- explain
+
+#### Decision oriented
+
+- evaluate
+- decide
+- plan
+
+## How to organize work?
+
+### Workloads
 
 The atomic parts of a workload are CPU instructions (machine) or neuronal synapsis (human).
 
