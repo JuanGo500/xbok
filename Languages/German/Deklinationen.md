@@ -2,10 +2,10 @@
 
 Caso|Masculino|Femenino|Neutro|Plural
 -|-|-|-|-
-Nominativo|der|die|das|die
-Acusativo|den|die|das|die
-Dativo|dem|der|dem|den
-Genitivo|des|der|des|der
+Nominativo|der|das|die|die
+Acusativo|den|das|die|die
+Dativo|dem|dem|der|den
+Genitivo|des|des|der|der
 
 =======
 
